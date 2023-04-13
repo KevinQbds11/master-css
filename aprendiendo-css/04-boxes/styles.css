@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    background-image: url(img/vintage-ornamental-flowers-background_52683-28040.webp);
+}
+
+body {
+    padding: 50px;
+}
+
+.cajas {
+    max-width: 2000px;
+    border: 10px solid black;
+}
+
+.caja {
+    width: 500px;
+    height: 500px;
+    /*background-color:rgb(130, 67, 51);*/
+    margin: 25px;
+    border: 10px dashed black;
+    display: block;
+    float: left;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+    margin: 100px;
+    line-height: normal;
+}
+
+.caja p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 480px;
+}
+
+.next-content {
+   }
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+;

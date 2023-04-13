@@ -1,0 +1,139 @@
+/*#########Selectores: 
+*/
+
+/*Selector Universal*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector de Etiqueta (nombre de etiqueta)*/
+
+
+
+a {
+    color: rgb(165, 120, 42);
+}
+
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    background-color: orangered;
+    padding: 10px;
+}
+
+header {
+    /*Todas las etiquetas header las estoy seleccionando*/
+    background-color: rgb(159, 28, 215);
+    color: whitesmoke;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+/*Selector de id*/
+
+
+#description {
+    border: 10px dashed rgb(231, 83, 83);
+}
+
+#footer {
+    background-color: yellowgreen;
+}
+
+#description,
+#footer,
+#header-bar {
+    padding: 10px;
+}
+
+#header-bar {
+    border-bottom: 10px dashed rgb(231, 83, 83);
+    margin-bottom: 15px;
+}
+
+
+/*Selector de clase*/
+.nav-bar {
+    border-top: 10px dashed rgb(231, 83, 83);
+    border-right: 10px dashed rgb(231, 83, 83);
+    border-bottom: 10px dashed rgb(231, 83, 83);
+}
+
+.description-paragraph {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description-paragraph--active {
+    background-color: darkgoldenrod;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact-form form fieldset {
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 0px;
+    border: 3px solid rgb(245, 142, 8);
+}
+
+.contact-form form fieldset legend {
+    background-color: antiquewhite;
+    border: 3px solid rgb(245, 142, 8);
+    padding: 10px;
+}
+
+.contact-form form fieldset * {
+    display: block;
+}
+
+/*Selector de atributo*/
+
+
+input[type="submit"] {
+    background-color: rgb(4, 159, 159);
+    color: bisque;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    color: green;
+    width: 200px;
+}
+
+/*Selector Hijo*/
+
+#menu>ul>li {
+    color: black;
+}
+
+#menu>ul>li>a {
+    color: rgb(100, 120, 42);
+    /*Aqui gana la especificidad ante la declaracion general de todos los anchor de color dorado*/
+}
+
+/*Prioridad*/
+
+/*#saludo{
+    Aqui el background de #saludo no tenía dimensiones establecidad por lo cual cuando cambiara el color del fondo no se mostraba,
+    solo se mostró hasta que le coloqué la propiedad border
+    border: 1px dashed darkgoldenrod;
+    background-color:darkgoldenrod;
+}
+*/
+/*Selecciono el id saludo y luego el h1*/
+#saludo h1{
+
+    background-color: green;
+}
